@@ -8,7 +8,7 @@ let secretWord = '';
 let words = [];
 
 // Lettura delle parole dal file di testo
-function readWordsFromFile("paroleWordle.txt", "utf-8") {
+function readWordsFromFile(filename) {
   return new Promise((resolve, reject) => {
     const rl = readline.createInterface({
       input: fs.createReadStream("paroleWordle.txt"),
