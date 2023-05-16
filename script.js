@@ -10,8 +10,9 @@ let words = [];
 // Lettura delle parole dal file di testo
 function readWordsFromFile(filename) {
   return new Promise((resolve, reject) => {
+    const fileStream = fs.createReadStream(filename);
     const rl = readline.createInterface({
-      input: fs.createReadStream("paroleWordle.txt"),
+      input: fileStream,
       crlfDelay: Infinity
     });
 
@@ -74,7 +75,7 @@ function compareWords(guess) {
 // Funzione principale del gioco
 async function playWordle() {
   try {
-    await readWordsFromFile('paroleWordle.txt');
+    await readWordsFromFile('parole.txt');
     generateSecretWord();
 
     let attempts = 0;
