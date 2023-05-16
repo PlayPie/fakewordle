@@ -1,0 +1,34 @@
+Per l'implementazione di Worlde Homemade:
+
+Divisione dei compiti in 3
+-HTML: Andy
+-CSS: Pietro/Fra
+-JS: Mattia
+
+Creazione di un database di parole da cui estrarre quella su cui il wordle si baserà
+    |-> ✔Implementazione di un dizionario di parole valide
+    |
+    |-> Autograb dell'input
+
+Dettagli Gioco:
+    |-> Parole da 5 caratteri
+    |
+    |-> 6 Tentativi massimi per indovinare la parola
+    |
+    |-> Trasformare le lettere interne al blocco di wordle in maiuscolo (implementazione css: text-transform: uppercase;)
+    |
+    |-> Implementazione tastiera
+
+
+//slice della parola per associazione agli input:
+    let text = "Hello world!";
+    let array = [5];
+    for(let i = 0; i<5; i++){
+        array[i] = text.slice(i, i+1);
+    }
+
+    for(let i = 0; i<5; i++){
+    document.getElementById("input1").innerHTML = array[1]}
+    \...
+
+    
