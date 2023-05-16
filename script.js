@@ -4,7 +4,6 @@ let aParole = ['aosta', 'atene', 'caino', 'capua', 'carlo', 'cluny', 'dante', 'd
   document.getElementById(x).value;
   l= aParole;
 }
-      aParole[0] [0]
      function parolaRandom(){
 
       l=Math.floor(Math.random()*aParole.length);

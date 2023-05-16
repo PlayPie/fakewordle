@@ -22,7 +22,7 @@ Dettagli Gioco:
 
 //slice della parola per associazione agli input:
     let text = "Hello world!";
-    let array = [5];
+    let aParole = [5];
     for(let i = 0; i<5; i++){
         array[i] = text.slice(i, i+1);
     }
