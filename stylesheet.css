@@ -4,8 +4,8 @@ body{
 
 #gameForm{
     text-align: center;
-
 }
+
 form > div > input{
     margin: 0 auto;
 }
@@ -26,3 +26,6 @@ input[type="text"]:focus{
     outline: none;
 }
 
+div{
+    text-align: center;
+}
