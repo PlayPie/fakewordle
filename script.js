@@ -7,9 +7,9 @@ let aParole = ['aosta', 'atene', 'caino', 'capua', 'carlo', 'cluny', 'dante', 'd
      function parolaRandom(){
 
       l=Math.floor(Math.random()*aParole.length);
-
-
 }
+
+
 
 
 
