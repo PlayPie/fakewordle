@@ -31,4 +31,8 @@ Dettagli Gioco:
     document.getElementById("input1").innerHTML = array[1]}
     \...
 
-    
+!!!---------------------------------------------------------------------------------------------------------------------------------------------------------------------!!!
+    - dal nuovo js, è necessario toglliere l'initBoard, poichè la tabella sarà fatta a mano
+    - decidere cosa fare con la fn animateCSS, se tenerla o meno
+    - modificare generalmente il js per adattarlo all'html, e viceversa, modificare html per adattarsi al js nuovo
+!!!---------------------------------------------------------------------------------------------------------------------------------------------------------------------!!!
