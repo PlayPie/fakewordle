@@ -1,4 +1,11 @@
-Per l'implementazione di Worlde Homemade:
+!!!---------------------------------------------------------------------------------------------------------------------------------------------------------------------!!!
+    - dal nuovo js, è necessario toglliere l'initBoard, poichè la tabella sarà fatta a mano
+    - decidere cosa fare con la fn animateCSS, se tenerla o meno
+    - modificare generalmente il js per adattarlo all'html, e viceversa, modificare html per adattarsi al js nuovo
+!!!---------------------------------------------------------------------------------------------------------------------------------------------------------------------!!!
+
+
+/*Per l'implementazione di Worlde Homemade:
 
 Divisione dei compiti in 3
 -HTML: Andy
@@ -29,10 +36,6 @@ Dettagli Gioco:
 
     for(let i = 0; i<5; i++){
     document.getElementById("input1").innerHTML = array[1]}
-    \...
+    \...*/
 
-!!!---------------------------------------------------------------------------------------------------------------------------------------------------------------------!!!
-    - dal nuovo js, è necessario toglliere l'initBoard, poichè la tabella sarà fatta a mano
-    - decidere cosa fare con la fn animateCSS, se tenerla o meno
-    - modificare generalmente il js per adattarlo all'html, e viceversa, modificare html per adattarsi al js nuovo
-!!!---------------------------------------------------------------------------------------------------------------------------------------------------------------------!!!
+
