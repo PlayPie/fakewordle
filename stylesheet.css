@@ -1,65 +1,106 @@
 body{
     font-family: Montserrat,'Open Sans',sans-serif;
+    background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 50%, rgba(255,255,255,1) 100%);;
 }
+/*Si seleziona il body, a cui vengono applicati dei font (prima montserrat, poi opensans[le virgolette vengono usate per via dello spazio, e nel caso i due font selezionati non fossero disponibili, utilizza la famiglia sans-serif*/
 
-#gameForm{
+/*TITOLO E FOOTER*/
+.importants{
     text-align: center;
+    color:white;
+    font-family: monaco,Consolas,Lucida Console,monospace;
+    margin: 75px;
 }
+/*Si selezionano gli elementi con class="importants", a cui vengono modificati l'allineamento e il colore del testo, il font e il margine su tutti e 4 i lati*/
 
-form > div > input{
-    margin: 0 auto;
+#titleHeader{
+    font-size: 4em;
+    margin-top: 30px;
+    height: 50px;
 }
+/*al tag con id="titleHeader", vengono inoltre modificati ulteriormente la dimensione del font, il margine superiore e l'altezza del tag*/
 
-input[type="text"]{
+#creditsFooter{
+    margin-bottom: 0px;
+}
+/*al tag con id="creditsFooter", viene inoltre modificato ulteriormente il margine inferiore*/
+
+/*TABELONE DI GIOCO*/
+#tabellone {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+/*si seleziona il tag con id="tabellone", a cui viene modificata la proprietà display, rendendolo un flex container, i cui oggetti vengono allineati al centro e la cui visualizzazione sarà incolonnata */
+
+.lettera {
+    display: flex;
     width:50px;
     height: 50px;
     border: 4px solid grey;
     border-radius: 5px;
-    caret-color: transparent;
     font-size: 30px;
-    text-align: center;
     text-transform: uppercase;
     margin: 3px;
+    justify-content: center;
+    align-items: center;
 }
+/*si selezionano gli elementi con class="lettera", quindi tutti i textbox, a cui vengono modificate diverse proprietà:
+/- si modifica il display, impostandolo a flex
+/- si allineano gli elementi al centro con align-items e si giustifica il testo al centro con justify-content
+/- si impostano le dimensioni (width e height)
+/- si impostano i bordi e i margini
+/- si trasforma il testo in maiuscolo con text-transform
+/- si modifica la dimensione del testo
+*/
 
-input[type="text"]:focus{
-    outline: none;
+.linea {
+    display: flex;
 }
+/*si selezionano gli elementi con class="linea" e viene impostato il display a flex*/
 
-div{
+div {
     text-align: center;
 }
+/*si selezionano i div, il cui testo sarà allineato al centro*/
 
-input[type="button"]
-{
+/*TASTIERA*/
+input[type="button"] {
     height: 50px;
     width: 35px;
     font-size: 15px;
     border-style: none;
-    background-color:lightgrey;
-    border-radius:5px;
-
+    background-color: lightgrey;
+    border-radius: 5px;
 }
-#canc
-{  
+/*si selezionano tutti gli input di tipo button e si modificano le dimensioni dell'elemento, le dimensioni del font, lo sfondo e i bordi*/
+
+#canc {
     width: 50px;
 }
+/*si selezione l'elemento con id="canc", a cui viene ulteriormente modificata la lunghezza*/
 
-#INVIO
-{
+#INVIO {
     width: 60px;
 }
-#tastiera
-{
+/*si selezione l'elemento con id="INVIO", a cui viene ulteriormente modificata la lunghezza*/
+
+#tastiera {
     margin: 100px;
 }
-#tastiera form
-{
+/*si selezione l'elemento con id="tastiera", a cui viene ulteriormente modificata la lunghezza*/
+
+#tastiera form {
     margin: 5px;
 }
-input[type="button"]:hover{
+/*si selezionano tutti i form discendenti di id="tastiera" a cui viene impostato un marigne pari a 5px*/
+
+input[type="button"]:hover {
     background-color: gray;
 }
-input[type="button"]:active{
-    background-color:rgb(82, 46, 46);
+/*a tutti gli input di tipo button viene impostato lo sfondo grigio nel caso in cui si passi sopra all'elemento col mouse*/
+
+input[type="button"]:active {
+    background-color: rgb(82, 46, 46);
 }
+/*a tutti gli input di tipo button viene impostato lo sfondo rgb tendente al rosso nel caso in cui si clicchi sull'elemento col mouse*/
